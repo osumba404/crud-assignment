@@ -10,3 +10,6 @@ CREATE TABLE events (
     status ENUM('upcoming','cancelled','completed') DEFAULT 'upcoming',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ); 
+
+ALTER TABLE events ADD COLUMN image VARCHAR(255) DEFAULT NULL;
+
